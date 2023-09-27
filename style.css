@@ -32,6 +32,7 @@ body {
   justify-items: center;
 }
 .text {
+  width: 20vw;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -44,18 +45,26 @@ body {
   color: rgb(255, 255, 255, 0.4);
 }
 .text .result {
-  font-size: 6rem;
+  font-size: 4.5rem;
 }
 .buttons {
   margin: 2rem;
+}
+.text span {
+  display: block;
+  text-overflow: ellipsis;
+  text-align: right;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .button {
   font-family: "Work Sans", sans-serif;
   font-weight: normal;
   color: #fff;
   font-size: 2rem;
-  height: 72px;
-  width: 72px;
+  height: 5rem;
+  width: 5rem;
   border-radius: 1rem;
   border: none;
   background-color: #2e2f38;
@@ -68,13 +77,10 @@ body {
   background-color: #4b5efc;
 }
 .button img {
-  margin: 1.25rem auto;
+  margin: 1.5rem auto;
 }
 
 @media screen and (max-width: 480px) {
-  :root {
-    font-size: 14px;
-  }
   body {
     min-width: 0;
   }
@@ -90,20 +96,24 @@ body {
   }
 }
 @media screen and (max-width: 375px) {
-  :root {
-    font-size: 14px;
-  }
   body {
     min-width: 0;
   }
   .container {
     width: 95vw;
   }
+  .grid {
+    gap: 0.5rem;
+  }
   .buttons,
   .text {
-    margin: 1rem;
+    margin: 0.5rem;
   }
   .text {
     gap: 0;
+    width: 88vw;
+  }
+  .text .result {
+    font-size: 10vw;
   }
 }
