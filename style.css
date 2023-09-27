@@ -71,14 +71,38 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  :root{
+  :root {
     font-size: 14px;
   }
   body {
     min-width: 0;
   }
+  .container {
+    width: 90vw;
+  }
   .buttons,
   .text {
     margin: 1rem;
+  }
+  .text {
+    gap: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  :root {
+    font-size: 14px;
+  }
+  body {
+    min-width: 0;
+  }
+  .container {
+    width: 95vw;
+  }
+  .buttons,
+  .text {
+    margin: 1rem;
+  }
+  .text {
+    gap: 0;
   }
 }
