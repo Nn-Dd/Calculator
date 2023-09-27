@@ -5,15 +5,18 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
-
+:root {
+  font-size: 16px;
+}
 body {
   background-color: #17171c;
   font-family: "Work Sans", sans-serif;
   color: #ffffff;
   min-height: 100vh;
   min-width: 100vh;
-  font-size: 16px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,4 +68,17 @@ body {
 }
 .button img {
   margin: 1.25rem auto;
+}
+
+@media screen and (max-width: 480px) {
+  :root{
+    font-size: 14px;
+  }
+  body {
+    min-width: 0;
+  }
+  .buttons,
+  .text {
+    margin: 1rem;
+  }
 }
