@@ -81,39 +81,76 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+
   body {
     min-width: 0;
   }
   .container {
-    width: 90vw;
+    width: 75vw;
   }
+  .button {
+    height: 9vh;
+    width: 15vw;
+  }
+  .button img {
+    margin: 1.4rem auto;
+  }
+
   .buttons,
   .text {
     margin: 1rem;
   }
+
   .text {
     gap: 0;
+    width: auto;
   }
 }
-@media screen and (max-width: 375px) {
-  body {
-    min-width: 0;
+@media screen and (max-width: 425px) {
+  :root {
+    font-size: 15px;
   }
   .container {
-    width: 95vw;
+    width: 70vw;
+  }
+  .text .result {
+    font-size: 3rem;
+  }
+
+  .button {
+    height: 7vh;
+    width: 14vw;
   }
   .grid {
     gap: 0.5rem;
   }
-  .buttons,
-  .text {
-    margin: 0.5rem;
+  .button img {
+    margin: 0.8rem auto;
   }
-  .text {
-    gap: 0;
-    width: 88vw;
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    font-size: 15px;
+  }
+  .container {
+    width: 85vw;
   }
   .text .result {
-    font-size: 10vw;
+    font-size: 3rem;
+  }
+
+  .button {
+    height: 9vh;
+    width: 17vw;
+  }
+  .grid {
+    gap: 0.5rem;
+  }
+  .button img {
+    margin: 0.9rem auto;
   }
 }
