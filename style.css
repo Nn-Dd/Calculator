@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background-color: #17171c;
+  font-family: "Work Sans", sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  min-width: 100vh;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border: 2px solid #fff;
+  border-radius: 0.625rem;
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 300;
+  margin: 2rem;
+  gap: 1rem;
+}
+.text .operation {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255, 0.4);
+}
+.text .result {
+  font-size: 6rem;
+}
+.buttons {
+  margin: 2rem;
+}
+.button {
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  color: #fff;
+  font-size: 2rem;
+  height: 72px;
+  width: 72px;
+  border-radius: 1rem;
+  border: none;
+  background-color: #2e2f38;
+  cursor: pointer;
+}
+.button.first-line {
+  background-color: #4e505f;
+}
+.button.last-row {
+  background-color: #4b5efc;
+}
+.button img {
+  margin: 1.25rem auto;
+}
